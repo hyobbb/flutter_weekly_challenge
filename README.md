@@ -5,11 +5,11 @@
 
 ## Demo
 - Create Task and Mark Update<br />
-  <img src="https://raw.githubusercontent.com/hyobbb/flutter_weekly_challenge/master/demo/basic_usage.gif" width="100">
+  <img src="https://raw.githubusercontent.com/hyobbb/flutter_weekly_challenge/master/demo/basic_usage.gif" width="300">
 - Edit and Remove Task<br />
-  <img src="https://raw.githubusercontent.com/hyobbb/flutter_weekly_challenge/master/demo/edit_remove.gif" width="100">
+  <img src="https://raw.githubusercontent.com/hyobbb/flutter_weekly_challenge/master/demo/edit_remove.gif" width="300">
 - Change Settings<br />
-  <img src="https://raw.githubusercontent.com/hyobbb/flutter_weekly_challenge/master/demo/setting.gif" width="100">
+  <img src="https://raw.githubusercontent.com/hyobbb/flutter_weekly_challenge/master/demo/setting.gif" width="300">
 
 
 ### Technical Feature

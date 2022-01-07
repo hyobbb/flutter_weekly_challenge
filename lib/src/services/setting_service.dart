@@ -8,7 +8,7 @@ import '../models/models.dart';
 final settingServiceProvider = Provider((ref) => SettingService());
 
 class SettingService {
-  final Box _settingBox = Hive.box(taskBoxName);
+  final Box _settingBox = Hive.box(settingBoxName);
 
   AppSetting currentSetting() {
     final theme = _settingBox.get('theme');
