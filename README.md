@@ -1,30 +1,23 @@
 # weekly_challenge
+- Simple weekly task application by Flutter 
+- Tasks will be repeated every week and user can add, update and remove.
+- Users can review their weekly history
 
-A new Flutter project.
+## Demo
+- Create Task and Mark Update<br />
+  <img src="https://raw.githubusercontent.com/hyobbb/flutter_weekly_challenge/master/demo/basic_usage.gif" width="100">
+- Edit and Remove Task<br />
+  <img src="https://raw.githubusercontent.com/hyobbb/flutter_weekly_challenge/master/demo/edit_remove.gif" width="100">
+- Change Settings<br />
+  <img src="https://raw.githubusercontent.com/hyobbb/flutter_weekly_challenge/master/demo/setting.gif" width="100">
 
-## Getting Started
 
-This project is a starting point for a Flutter application that follows the
-[simple app state management
-tutorial](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple).
+### Technical Feature
+- State Management: [Flutter Riverpod](https://pub.dev/packages/flutter_riverpod).
+- Local Storage: [Flutter Hive](https://pub.dev/packages/hive)
+- Navigator 1.0 used
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Supported Locale
+- Spanish
+- English
 
-## Assets
-
-The `assets` directory houses images, fonts, and any other files you want to
-include with your application.
-
-The `assets/images` directory contains [resolution-aware
-images](https://flutter.dev/docs/development/ui/assets-and-images#resolution-aware).
-
-## Localization
-
-This project generates localized messages based on arb files found in
-the `lib/src/localization` directory.
-
-To support additional languages, please visit the tutorial on
-[Internationalizing Flutter
-apps](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
