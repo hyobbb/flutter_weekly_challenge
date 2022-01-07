@@ -12,6 +12,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_local_notifications: ^9.2.0
   flutter_localizations:
     sdk: flutter
   flutter_riverpod: ^1.0.3

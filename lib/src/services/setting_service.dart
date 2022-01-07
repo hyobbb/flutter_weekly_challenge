@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive/hive.dart';
 import 'package:weekly_challenge/src/utils/constants.dart';
-
+import 'package:timezone/timezone.dart' as tz;
 import '../models/models.dart';
 
 final settingServiceProvider = Provider((ref) => SettingService());
 
 class SettingService {
+  final int _notificationId  = 0;
+  final flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
   final Box _settingBox = Hive.box(taskBoxName);
 
   AppSetting currentSetting() {
@@ -49,5 +52,28 @@ class SettingService {
       default:
         return 'system';
     }
+  }
+
+  Future<void> setNotification() async {
+    await flutterLocalNotificationsPlugin.zonedSchedule(
+      _notificationId,
+      'scheduled title',
+      'scheduled body',
+      tz.TZDateTime.now(tz.local).add(const Duration(seconds: 5)),
+      const NotificationDetails(
+        android: AndroidNotificationDetails(
+          'your channel id',
+          'your channel name',
+          channelDescription: 'your channel description',
+        ),
+      ),
+      androidAllowWhileIdle: true,
+      uiLocalNotificationDateInterpretation:
+          UILocalNotificationDateInterpretation.absoluteTime,
+    );
+  }
+
+  Future<void> cancelNotification() async {
+    await flutterLocalNotificationsPlugin.cancel(_notificationId);
   }
 }
