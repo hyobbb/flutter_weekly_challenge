@@ -1,0 +1,34 @@
+{
+  "appTitle": "weekly_challenge",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+
+  "historyTitle": "Weekly History",
+  "createTaskTitle": "Create Task",
+  "editTaskTitle": "Edit Task",
+  "settingTitle": "Settings",
+
+  "menuHistory": "History",
+  "menuWeekly": "Weekly Status",
+
+  "taskHint": "Task Description",
+  "perWeek": " Day(s) Per Week",
+  "required": "Required",
+
+  "completeMessage": "You have done every tasks for this week!!",
+  "emptyMessage": "There's no task to do",
+  "taskRemoved": "Task Removed",
+
+  "theme": "Theme",
+  "lightTheme": "Light Theme",
+  "darkTheme": "Dark Theme",
+  "systemTheme": "System Theme",
+
+  "locale": "Language",
+  "english": "English",
+  "spanish": "Spanish",
+
+  "ok": "Ok",
+  "cancel": "Cancel"
+}
